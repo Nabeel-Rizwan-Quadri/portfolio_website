@@ -72,7 +72,7 @@ const Footer = () => {
         mx: 'auto', 
         position: 'relative', 
         zIndex: 1,
-        px: { xs: 4, sm: 6, md: 3, lg: 6, xl: 8 }
+        px: { xs: 4, sm: 6, md: 3, lg: 2, xl: 3 }
       }}>
         <Grid container spacing={4}>
           {/* Logo and tagline */}

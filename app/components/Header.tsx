@@ -44,7 +44,7 @@ const Header = ({ scrollToProjects }: { scrollToProjects: () => void }) => {
   };
 
   const drawer = (
-    <Box sx={{ width: '100vw', height: '100vh', bgcolor: '#121212', p: 2 }}>
+    <Box sx={{ width: '100vw', height: '100vh', bgcolor: '#121212', color: '#fff', p: 2 }}>
       <Box sx={{ display: 'flex', justifyContent: 'flex-end', mb: 4 }}>
         <IconButton 
           onClick={handleDrawerToggle}
@@ -70,7 +70,8 @@ const Header = ({ scrollToProjects }: { scrollToProjects: () => void }) => {
                 '.MuiListItemText-primary': {
                   fontSize: '1.2rem',
                   fontWeight: 500,
-                  fontFamily: 'var(--font-roboto-serif)'
+                  fontFamily: 'var(--font-roboto-serif)',
+                  color: '#fff'
                 }
               }}
             />
@@ -94,7 +95,7 @@ const Header = ({ scrollToProjects }: { scrollToProjects: () => void }) => {
     >
       <Toolbar sx={{ 
         justifyContent: 'space-between', 
-        px: { xs: 4, sm: 6, md: 3, lg: 6, xl: 8 },
+        px: { xs: 4, sm: 6, md: 3, lg: 2, xl: 3 },
         maxWidth: '1600px',
         width: '100%',
         mx: 'auto',

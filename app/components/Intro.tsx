@@ -5,7 +5,9 @@ import {
   Box, 
   Button, 
   IconButton, 
-  Container 
+  Container,
+  useMediaQuery,
+  useTheme
 } from '@mui/material';
 import { motion, useAnimation, useInView, } from 'framer-motion';
 import Image from 'next/image';
@@ -149,6 +151,8 @@ const Intro = ({ scrollToProjects, scrollIconVisible }: IntroProps) => {
   const isInView = useInView(profileRef);
   const controls = useAnimation();
   const [isMounted, setIsMounted] = useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   
   // Generate random values only on client side
   const randomValues = useMemo(() => {
@@ -195,7 +199,7 @@ const Intro = ({ scrollToProjects, scrollIconVisible }: IntroProps) => {
           flexWrap: 'wrap',
           py: { xs: 4, md: 6 },
           pb: { xs: 8, md: 6 },
-          px: { xs: 4, sm: 6, md: 3, lg: 6, xl: 8 },
+          px: { xs: 4, sm: 6, md: 3, lg: 2, xl: 3 },
           maxWidth: '1600px',
           mx: 'auto',
           position: 'relative',
@@ -284,10 +288,10 @@ const Intro = ({ scrollToProjects, scrollIconVisible }: IntroProps) => {
                 sx={{ 
                   backgroundColor: '#fff', 
                   color: '#000', 
-                  mr: 3,
+                  mr: { xs: 2, sm: 3 },
                   borderRadius: '4px',
-                  padding: '0.7rem 1.5rem',
-                  fontSize: '0.95rem',
+                  padding: { xs: '0.5rem 1rem', sm: '0.7rem 1.5rem' },
+                  fontSize: { xs: '0.85rem', sm: '0.95rem' },
                   textTransform: 'none',
                   fontWeight: 500,
                   fontFamily: 'var(--font-roboto-serif)',
@@ -305,8 +309,8 @@ const Intro = ({ scrollToProjects, scrollIconVisible }: IntroProps) => {
                   borderColor: '#fff', 
                   color: '#fff',
                   borderRadius: '4px',
-                  padding: '0.7rem 1.5rem',
-                  fontSize: '0.95rem',
+                  padding: { xs: '0.5rem 1rem', sm: '0.7rem 1.5rem' },
+                  fontSize: { xs: '0.85rem', sm: '0.95rem' },
                   textTransform: 'none',
                   fontWeight: 500,
                   fontFamily: 'var(--font-roboto-serif)',
@@ -492,16 +496,19 @@ const Intro = ({ scrollToProjects, scrollIconVisible }: IntroProps) => {
             y: { duration: 0.5, delay: 2.0 }
           }}
           style={{
-            position: 'relative',
+            position: 'fixed',
+            bottom: isMobile ? '16px' : '24px',
+            left: 0,
+            right: 0,
             textAlign: 'center',
-            height: '10vh',
+            height: 'auto',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             width: '100%',
             cursor: 'pointer',
-            zIndex: 3,
-            marginTop: 'auto'
+            zIndex: 6,
+            marginTop: 0
           }}
           onClick={scrollToNextSection}
         >
@@ -553,7 +560,8 @@ const Intro = ({ scrollToProjects, scrollIconVisible }: IntroProps) => {
                 display: 'block',
                 fontSize: '0.7rem',
                 letterSpacing: '1px',
-                opacity: 0.7,
+                color: '#fff',
+                opacity: 0.85,
                 fontFamily: 'var(--font-roboto-serif)'
               }}
             >
