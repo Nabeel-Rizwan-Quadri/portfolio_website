@@ -9,9 +9,9 @@ import {
 } from '@mui/material';
 import { motion, useAnimation } from 'framer-motion';
 import ProductKeysSection from '../components/ProductKeysSection';
-import ProjectShowcaseSection from '../components/ProjectShowcaseSection';
+// import ProjectShowcaseSection from '../components/ProjectShowcaseSection';
 // import ClientExperiencesSection from '../components/ClientExperiencesSection';
-import TestimonialsSection from '../components/TestimonialsSection';
+// import TestimonialsSection from '../components/TestimonialsSection';
 import SkillsSection from '../components/SkillsSection';
 import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
