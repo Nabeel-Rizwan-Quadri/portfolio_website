@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Modern CV theme and color
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Adjust page margins
+\usepackage[scale=0.75]{geometry}
+
+% Personal data
+\name{Nabeel Rizwan}{Quadri}
+\phone[mobile]{(+49) 15211314543}
+\email{mr.nabeelrizwan@outlook.com}
+\homepage{nabeelrizwan.netlify.app}
+\social[linkedin]{nabeel-rizwan-quadri}
+\address{Cottbus/Berlin, Germany (Schengen Visa)}{}{}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Technologies}
+\cvitem{Programming Languages}{JavaScript, TypeScript, Python, Rust, SQL}
+\cvitem{Data Analysis \& Visualization}{Tableau, KNIME, Pandas, Numpy, Data Analytics, Data Processing}
+\cvitem{Databases \& Queries}{SQL, PostgreSQL, MySQL, MongoDB, Database Structures, Data Mining}
+\cvitem{Office \& Productivity}{MS Office (Excel, Word, PowerPoint), VBA Programming, Data Reporting}
+\cvitem{Databases \& Queries}{MongoDB, Firebase, PostgreSQL, Database Structures, Data Migration}
+\cvitem{DevOps \& Monitoring}{GitHub Actions, AWS, Docker, Kubernetes, CI/CD, Tool Monitoring}
+\cvitem{AI \& Machine Learning}{Tensorflow, PyTorch, NLP, Process Optimization, Automated Analysis}
+
+
+\section{Experience}
+
+\cventry{Nov 2024 -- PRESENT}{AI \& Software Engineer}{OpenIAP (TidEdge)}{Copenhagen, Denmark}{AI-Deployment Applications}{
+\begin{itemize}
+\item Led front-end development using SvelteKit with TypeScript and also worked on backend using Node.js and Rust
+\item Developed multi-language serverless templates using Node.js, Python, PHP, and .NET with embedded web servers
+\item Built a custom chatbot by integrating APIs and leveraging a database-driven knowledge base
+\end{itemize}}
+
+\cventry{Feb 2023 -- Oct 2024}{Software Engineer}{EuSopht}{Full-time}{Enterprise Solutions \& AI Integration}{
+\begin{itemize}
+\item Built and maintained full-stack web applications using Node.js, ReactJS, and Next.js, working with both SQL and NoSQL databases
+\item Implemented OAuth and integrated APIs from several providers, syncing datasets securely
+\item Created data pre-processing workflows to clean, transform, and structure data before storing it
+\item Improved API speed by optimizing MongoDB and SQL queries using advanced methods
+\item Visualized key metrics through front-end dashboards for better visibility and decision-making
+\end{itemize}}
+
+\cventry{Nov 2022 -- Jan 2023}{System Integration Engineer}{Dynamic Systems}{Contract}{E-Commerce \& Web Platform Development}{
+\begin{itemize}
+\item Built a MERN-stack restaurant ordering platform with web and mobile apps for menu browsing, ordering, and real-time tracking
+\item Integrated Stripe for secure online payments and automated checkout
+\end{itemize}}
+
+\cventry{Jul 2022 -- Oct 2022}{Full Stack Developer}{World Home Development}{Internship}{Legacy System Migration}{
+\begin{itemize}
+\item Contributed to migrating a legacy .NET CRM to the MERN stack by rebuilding core features, developing backend APIs, and handling data migration while maintaining functionality and performance
+\item Set up a basic CI/CD pipeline using Git and AWS to automate deployments, while strengthening skills in version control, code reviews, and collaborative development workflows
+\end{itemize}}
+
+\section{Education}
+\cventry{Expected 2027}{M.S. Artificial Intelligence}{Brandenburgische Technische Universität Cottbus-Senftenberg}{Germany}{}{Currently enrolled, focusing on data analytics, machine learning, and process optimization}
+\cventry{2019--2023}{B.S. Computer Science}{Hamdard University}{}{GPA: 3.8/4.0 (German Grade: 1.3)}{Strong foundation in software engineering and algorithms}
+
+\section{Language Skills}
+\cvitemwithcomment{English}{Proficient (C1 level)}{Excellent communication - Listening: C1, Reading: C1, Speaking: C1, Writing: C1}
+\cvitemwithcomment{Deutsch}{Grundkenntnisse (B1 Level)}{Listening: B1, Reading: B1, Speaking: B1, Writing: B1}
+\cvitemwithcomment{Urdu}{Native/Mother tongue}{}
+
+\end{document}
