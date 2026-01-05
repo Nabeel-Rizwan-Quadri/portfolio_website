@@ -260,7 +260,7 @@ const TestimonialsSection = () => {
         }}
       />
       
-      <Container id="testimonials" maxWidth={false} sx={{ maxWidth: '1600px', mx: 'auto', position: 'relative', zIndex: 1, px: { xs: 4, sm: 6, md: 3, lg: 6, xl: 8 } }}>
+      <Container id="testimonials" maxWidth={false} sx={{ maxWidth: '1600px', mx: 'auto', position: 'relative', zIndex: 1, px: { xs: 4, sm: 6, md: 3, lg: 2, xl: 3 } }}>
         <Box sx={{ mb: 8, textAlign: 'center' }}>
           <Typography
             variant="overline"
